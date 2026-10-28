@@ -1,0 +1,90 @@
+/* Базовые стили учебного приложения */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap; /* на узких экранах пункты меню переносятся */
+  justify-content: center;
+  gap: 8px 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #007eb6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Активный пункт меню подсвечиваем (NavLink добавляет класс active) */
+.nav a.active {
+  color: #1f2933;
+  border-bottom: 2px solid #007eb6;
+}
+
+.page {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page p {
+  word-break: break-word;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007eb6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005f8c;
+}
+
+button.danger {
+  background: #c0392b;
+}
+
+button.danger:hover {
+  background: #992d22;
+}
+
+input[type='text'] {
+  padding: 10px;
+  font-size: 16px;
+  width: 260px;
+  max-width: 100%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.open-close-row {
+  margin-bottom: 20px;
+}
